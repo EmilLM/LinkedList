@@ -66,7 +66,7 @@ class LinkedList {
     leader.next = nodeToRemove.next;
    
 
-    this.length++
+    this.length--
     return this.printList()
   }
 
