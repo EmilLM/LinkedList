@@ -57,9 +57,9 @@ class LinkedList {
     return this.printList()
   }
   remove(index) {
-    if (index == this.length) return []
+    if (index == this.length-1) return []
     if (index < 0) return undefined
-    if (index > this.length) return new ReferenceError('index does not exist')
+    if (index > this.length-1) return new ReferenceError('index does not exist')
 
     const leader = this.traverseToIndex(index-1);
     const nodeToRemove  = leader.next;
